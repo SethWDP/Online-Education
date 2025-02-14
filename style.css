@@ -60,6 +60,17 @@ section {
   background-color: var(--green);
   color: var(--black);
 }
+
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.heading span {
+  color: var(--green);
+}
 .header {
   position: fixed;
   top: 0;
@@ -183,6 +194,36 @@ section {
 }
 .about .row .content p::selection {
   background-color: #00e77f;
+}
+
+/* Course Section */
+.course .slide {
+  width: 30rem;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+.course .slide img {
+  width: 100%;
+  height: 25rem;
+}
+.course .slide h3 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: var(--white);
+}
+.course .slide p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+.course .swiper-pagination-bullet {
+  background-color: var(--white);
+}
+.course .swiper-pagination-bullet-active {
+  background-color: var(--green);
 }
 /* responsive */
 @media (max-width: 991px) {
