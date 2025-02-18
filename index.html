@@ -213,9 +213,9 @@
     <!-- Review section -->
     <section class="review" id="reviews">
       <h1 class="heading">student's <span>reviews</span></h1>
-      <div class="reviews-slider">
-        <div class="w">
-          <div class="slide">
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               consequatur.
@@ -235,7 +235,7 @@
             </div>
           </div>
 
-          <div class="slide">
+          <div class="swiper-slide slide">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               consequatur.
@@ -255,7 +255,7 @@
             </div>
           </div>
 
-          <div class="slide">
+          <div class="swiper-slide slide">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               consequatur.
@@ -275,7 +275,7 @@
             </div>
           </div>
 
-          <div class="slide">
+          <div class="swiper-slide slide">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               consequatur.
@@ -295,7 +295,7 @@
             </div>
           </div>
 
-          <div class="slide">
+          <div class="swiper-slide slide">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               consequatur.
@@ -315,8 +315,89 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contac</span>us</h1>
+      <div class="row">
+        <div class="image">
+          <img src="assets/Contact us-cuate.svg" alt="" />
+        </div>
+        <form action="" method="post">
+          <span>your name</span>
+          <input
+            type="text"
+            required
+            placeholder="enter your full name"
+            maxlength="50"
+            name="name"
+            class="box"
+          />
+          <span>your email</span>
+          <input
+            type="email"
+            required
+            placeholder="enter your valie email"
+            maxlength="50"
+            name="email"
+            class="box"
+          />
+          <span>your number</span>
+          <input
+            type="number"
+            required
+            placeholder="enter your value number"
+            max="9999999999"
+            min="0"
+            name="number"
+            class="box"
+            onkeypress="if(this.value.lenght == 10) return false"
+          />
+          <span> select course </span>
+          <select name="course" class="box">
+            <option value="" disabled selected>select the course</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="English">English</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Ux/UI Designer">Ux/UI Designer</option>
+            <option value="Networking">Networking</option>
+            <option value="Social Studies">Social Studies</option>
+            <option value="Photography">Photography</option>
+            <option value="Artificial Intelligence">
+              Artificial Intelligence
+            </option>
+          </select>
+          <span>select gender</span>
+          <div class="radio">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">female</label>
+          </div>
+          <input type="submit" value="send message" class="btn" name="send" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <section>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="credit">
+          &copy; copyright @ 2025 by <span>SethWDP</span> all rights reserved
+        </div>
+      </section>
+    </footer>
   </body>
   <!-- Swiper js link -->
 
